@@ -16,6 +16,9 @@ mongoose
   .then(console.log("Connected to the server"))
   .catch((err) => console.log(err));
 
+const carsRouter = require("./routes/cars");
+app.use("/cars", carsRouter);
+
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
