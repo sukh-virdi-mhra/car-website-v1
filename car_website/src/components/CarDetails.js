@@ -4,7 +4,7 @@ export default class CarDetails extends Component {
   render() {
     return (
       <div>
-        <p>Car Details</p>
+        <h1>Car Details</h1>
       </div>
     );
   }

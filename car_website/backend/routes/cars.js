@@ -1,7 +1,7 @@
 const router = require("express").Router();
 let Car = require("../models/car.model");
 
-router.route("/CurrentCars").get((req, res) => {
+router.route("/cars").get((req, res) => {
   Car.find()
     .then((cars) => res.json(cars))
     .catch((err) => res.status(400).json("Error: " + err));
