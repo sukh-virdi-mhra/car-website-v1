@@ -5,13 +5,13 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
-        CAR WEBSITE
+        VELOCE VIRDI
       </Link>
       <ul>
         <Link to="/">HOME</Link>
       </ul>
       <ul>
-        <Link to="/cars">CARS FOR SALE</Link>
+        <Link to="/cars">SALES</Link>
       </ul>
     </nav>
   );
