@@ -3,16 +3,22 @@ import "../styles/navbar.css";
 
 export default function Navbar() {
   return (
-    <nav className="nav">
-      <Link to="/" className="site-title">
-        VELOCE VIRDI
-      </Link>
+    <div class="nav">
+      <Link to="/">Veloce Virdi</Link>
       <ul>
-        <Link to="/">HOME</Link>
+        <li>
+          <Link to="/cars">SALES</Link>
+        </li>
+        <li>
+          <Link to="/">PARTS</Link>
+        </li>
+        <li>
+          <Link to="/">SERVICING</Link>
+        </li>
+        <li>
+          <Link to="/">CONTACT</Link>
+        </li>
       </ul>
-      <ul>
-        <Link to="/cars">SALES</Link>
-      </ul>
-    </nav>
+    </div>
   );
 }

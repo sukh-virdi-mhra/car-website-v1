@@ -1,26 +1,20 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import CarItem from "./CarItem";
 
 export default function CurrentCars() {
-  const [allCars, setAllCars] = useState([]);
-
+  const [data, setData] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:5000/cars").then((response) => {
-      setAllCars(response.data);
-    });
-  }, []);
-
-  if (!allCars) return null;
+    axios
+      .get("http://localhost:5000/cars")
+      .then((res) => setData(res.data))
+      .catch((err) => console.log(err, "it has an error"));
+  });
 
   return (
     <div>
-      {allCars.map((car) => {
-        return (
-          <ul>
-            <h3>{car.name}</h3>
-            <h4>{car.price}</h4>
-          </ul>
-        );
+      {data?.map((obj) => {
+        return <CarItem obj={obj} />;
       })}
     </div>
   );
