@@ -3,11 +3,14 @@
 # database
 .env
 
+/uploads
+
 # dependencies
 /node_modules
 /node_modules
 /.pnp
 .pnp.js
+/uploads
 
 # testing
 /coverage

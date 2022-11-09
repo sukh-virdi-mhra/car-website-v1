@@ -13,6 +13,7 @@ export default function CurrentCars() {
 
   return (
     <div>
+      <h1>Current Cars for Sale</h1>
       {data?.map((obj) => {
         return <CarItem obj={obj} />;
       })}

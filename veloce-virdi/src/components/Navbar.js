@@ -10,13 +10,13 @@ export default function Navbar() {
           <Link to="/cars">SALES</Link>
         </li>
         <li>
-          <Link to="/">PARTS</Link>
+          <Link to="/parts">PARTS</Link>
         </li>
         <li>
-          <Link to="/">SERVICING</Link>
+          <Link to="/servicing">SERVICING</Link>
         </li>
         <li>
-          <Link to="/">CONTACT</Link>
+          <Link to="/contact">CONTACT</Link>
         </li>
       </ul>
     </div>
