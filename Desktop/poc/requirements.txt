@@ -1,0 +1,2 @@
+agent-framework-ollama==1.0.0b251218
+agent-framework-devui==1.0.0b251218
